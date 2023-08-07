@@ -1,0 +1,60 @@
+.navbar {
+  height: 80px;
+  border-bottom: 1px solid #b4b1b1;
+
+  .wrapper {
+    display: flex;
+    padding-right: 7rem;
+    padding-left: 7rem;
+    align-items: center;
+    justify-content: center;
+
+    justify-content: space-between;
+    margin-top: 3rem;
+    .item {
+      display: flex;
+      font-size: 18px;
+    }
+
+    .left {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+
+      .shop-name {
+        font-size: 30px;
+        color: #FFB72B;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .icons {
+        display: flex;
+        gap: 30px;
+        color: #6e6d6d;
+        cursor: pointer;
+        .cart {
+          display: flex;
+          position: relative;
+          span {
+            background-color: #FFB72B;
+            color: rgb(255, 255, 255);
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+      align-items: center;
+      justify-content: center;
+      right: -40%;
+      top: -40%;
+position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
