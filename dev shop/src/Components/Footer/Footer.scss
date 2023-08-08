@@ -1,22 +1,92 @@
+$background: #f5f6fa;
+$text: #9c9c9c;
+$input-bg-color: #fff;
+$input-text-color: #a3a3a3;
+$button-bg-color: #7f8ff4;
+$button-text-color: #fff;
+
+
 .footer{
 margin-top: 25% ;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-gap: 20px;
-border-top: 1px solid grey;
+
+border-top: 1px solid rgb(222, 222, 222);
 
 .top{
     display: flex;
-    margin-top: 20px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    h4{
+        margin-right: 3rem;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     
+    .uppercase {
+        text-transform: uppercase;
+    }
+    
+    //** button
+    .btn {
+        display: inline-block;
+        background: transparent;
+        color: inherit;
+        font: inherit;
+        border: 0;
+        outline: 0;
+        padding: 0;
+        transition: all 200ms ease-in;
+        cursor: pointer;
+        
+        &--primary {
+            background: $button-bg-color;
+            color: $button-text-color;
+            box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+            border-radius: 2px;
+            padding: 12px 36px;
+            
+            &:hover {
+                background: darken($button-bg-color, 4%);
+            }
+            
+            &:active {
+                background: $button-bg-color;
+                box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+            }
+        }
+        
+        &--inside {
+            margin-left: -96px;
+        }
+    }
+    
+    //** form
+    .form {	
+        &__field {
+            width: 360px;
+            background: #fff;
+            color: $input-text-color;
+            font: inherit;
+            box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+            border: 0;
+            outline: 0;
+            padding: 22px 18px;
+        }
+    }
 }
 .bottom{
     display: flex;
     .footer-img{
-        height: 75px;
-        border-top: 1px solid grey;
+        height: 4.25rem;
+        border-top: 1px solid rgb(222, 222, 222);
+        margin-top: 1.5em;
     }
 }
 }
