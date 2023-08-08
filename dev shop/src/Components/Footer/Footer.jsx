@@ -9,7 +9,7 @@ const Footer = () => {
         <button className='button-em'><SendIcon/></button>
       </div>
       <div className='bottom'>
-     
+      <img src="Img/payment.png" alt="" />
       </div>
     </div>
   )
