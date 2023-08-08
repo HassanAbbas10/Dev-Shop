@@ -1,0 +1,22 @@
+.footer{
+margin-top: 25% ;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 20px;
+border-top: 1px solid grey;
+
+.top{
+    display: flex;
+    margin-top: 20px;
+    
+}
+.bottom{
+    display: flex;
+    .footer-img{
+        height: 75px;
+        border-top: 1px solid grey;
+    }
+}
+}
