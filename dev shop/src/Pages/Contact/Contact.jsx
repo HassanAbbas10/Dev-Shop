@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Contact.scss';
 const Contact = () => {
   const [Contact,setContact]=React.useState({
     name:"",
@@ -19,41 +19,42 @@ const Contact = () => {
   }
 
 const handleSubmit = (event) =>{
-  event.preventDeafault()
-  //submittoApi()
+  event.preventDefault()
+  //submit-to-Api()
   console.log(Contact)
 }
 
   return (
     <form onSubmit={handleSubmit}>
-            <input
+            <input className="feedback-input"
                 type="text"
                 placeholder="Name"
                 onChange={handleChange}
                 name="name"
                 value={Contact.name}
             />
-            <input
+            <input className="feedback-input"
                 type="text"
                 placeholder="Email"
                 onChange={handleChange}
                 name="email"
                 value={Contact.email}
             />
-            <input
+            <input className="feedback-input"
                 type="text"
                 placeholder="Phone Number"
                 onChange={handleChange}
                 name="phoneNum"
                 value={Contact.phoneNum}
             />
-             <textarea 
+             <textarea className="feedback-input"
                 value={Contact.message}
                 placeholder="Message"
                 onChange={handleChange}
                 name="message"
+               
             />
-             <button>Send</button>
+             <button className='contact-btn '>Send</button>
     </form>
   )
 }
