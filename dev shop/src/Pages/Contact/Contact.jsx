@@ -26,7 +26,34 @@ const handleSubmit = (event) =>{
 
   return (
     <form onSubmit={handleSubmit}>
-
+            <input
+                type="text"
+                placeholder="Name"
+                onChange={handleChange}
+                name="name"
+                value={Contact.name}
+            />
+            <input
+                type="text"
+                placeholder="Email"
+                onChange={handleChange}
+                name="email"
+                value={Contact.email}
+            />
+            <input
+                type="text"
+                placeholder="Phone Number"
+                onChange={handleChange}
+                name="phoneNum"
+                value={Contact.phoneNum}
+            />
+             <textarea 
+                value={Contact.message}
+                placeholder="Message"
+                onChange={handleChange}
+                name="message"
+            />
+             <button>Send</button>
     </form>
   )
 }
