@@ -60,3 +60,16 @@ const handleSubmit = (event) =>{
 }
 
 export default Contact
+
+
+
+//////////////////////
+// app.post("/submit", (req,res)=>{
+//   let a = req.body.name;
+//   let b = req.body.email;
+
+//   fs.writeFile("abc.txt", a + b , (err)=>{
+//     if(err) throw err;
+//   })
+
+// })

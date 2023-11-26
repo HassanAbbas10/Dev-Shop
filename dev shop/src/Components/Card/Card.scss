@@ -1,0 +1,38 @@
+.card-sec{ display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin:0 auto ;
+    
+.card-container{
+    max-width: 300px;
+    margin-top: 20px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    .card{
+        border: 1px solid slategrey;
+        margin-top: 30px;
+        padding: 10;
+        border-radius: 10px;
+        width: 350px;
+         img{
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 1px solid slategrey;
+            width: 100%;
+            border-radius: 12px;
+            &:hover{
+              
+            }
+        }
+        .name{
+            text-align:  center;
+        }
+        .prices{
+            font-size: x-small;
+            text-align: center;
+        }
+    }
+}}
